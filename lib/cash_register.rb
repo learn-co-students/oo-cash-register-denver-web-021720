@@ -15,10 +15,8 @@ class CashRegister
             title: title,
             price: price,
             qty: qty}
-        i = 0
-        until i == qty
+        qty.times do
             @items << title
-            i+=1
         end
 
     end
